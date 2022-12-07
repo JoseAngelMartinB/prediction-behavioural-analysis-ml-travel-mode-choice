@@ -1,0 +1,14 @@
+,ResNet,RF
+_best_GMPCA,0.3325572677044859,0.3841262601320743
+_best_loss,1.1009432000190469,0.9567839780108053
+_elapsed_time,64.91182759899999,1.9367295490000007
+batch_size,2.0,
+epochs,0.0,
+input_dim,0.0,
+output_dim,0.0,
+criterion,,0.0
+max_depth,,8.0
+max_features,,5.0
+min_samples_leaf,,16.0
+min_samples_split,,13.0
+n_estimators,,186.0
