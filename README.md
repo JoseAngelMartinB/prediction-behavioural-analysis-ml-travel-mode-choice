@@ -9,7 +9,7 @@ Authors:
 
 This paper has been submitted for publication in *Transportation Research Part C: Emerging Technologies*.
 
-Preprint available at [arXiv](https://arxiv.org/abs/XXXXXX).
+Preprint available at [arXiv](https://arxiv.org/abs/2301.04404).
 
 ## Abstract
 
