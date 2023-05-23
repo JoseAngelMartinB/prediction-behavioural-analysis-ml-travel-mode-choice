@@ -1,0 +1,19 @@
+\begin{table}
+\centering
+\caption{Median of the estimated WTPs values by model for each real dataset on the test set}
+\label{tab:experiment_4_WTP_table}
+\begin{tabular}{rllll}
+\toprule
+{} & \multicolumn{2}{c}{Optima} & \multicolumn{2}{c}{LPMC} \\
+\cmidrule(lr){4-5} \cmidrule(lr){2-3} 
+{} & Public transport & Private modes & Public Transport &        Car \\
+\midrule
+MNL     &        12.118924 &     48.805813 &        42.391386 &  41.620671 \\
+SVM     &         8.741763 &     37.558550 &         9.597268 &  45.155618 \\
+RF      &         1.732209 &      1.750533 &         0.000000 &  -4.024618 \\
+XGBoost &         3.385929 &      3.670491 &         7.768991 & -10.329962 \\
+NN      &         7.265633 &     22.786282 &        17.457197 &  49.098102 \\
+DNN     &         4.635042 &     30.268901 &        11.992251 &  50.942638 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}
+\centering
+\caption{Estimated market shares by model for each real dataset on the test set}
+\label{tab:experiment_4_MS_table}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{rlllllllllll}
+\toprule
+{} & \multicolumn{3}{c}{Optima} & \multicolumn{4}{c}{NTS} & \multicolumn{4}{c}{LPMC} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-8} \cmidrule(lr){9-12} 
+{} & Public transport & Private modes & Soft modes &       Walk &   Bike & Public transport &        Car &   Walk &  Bike & Public transport &        Car \\
+\midrule
+MNL     &        27.820000 &     66.930000 &       5.25 &  16.400000 &  24.16 &             4.17 &  55.270000 &  16.84 &  2.86 &        36.240000 &  44.070000 \\
+SVM     &        27.980000 &     66.340000 &       5.68 &  16.000000 &  24.32 &             3.84 &  55.850000 &  16.74 &  2.92 &        36.100000 &  44.240000 \\
+RF      &        27.430000 &     67.420000 &       5.16 &  16.200000 &  24.43 &             4.05 &  55.320000 &  16.94 &  2.91 &        36.350000 &  43.800000 \\
+XGBoost &        26.610001 &     68.160004 &       5.23 &  16.209999 &  24.32 &             4.01 &  55.450001 &  16.98 &  2.91 &        36.099998 &  44.000000 \\
+NN      &        27.090000 &     67.140000 &       5.78 &  16.140000 &  24.35 &             4.06 &  55.450000 &  16.84 &  2.86 &        36.190000 &  44.120000 \\
+DNN     &        27.879999 &     66.980003 &       5.14 &  14.390000 &  23.68 &             3.92 &  58.009998 &  16.52 &  3.01 &        36.980000 &  43.490002 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

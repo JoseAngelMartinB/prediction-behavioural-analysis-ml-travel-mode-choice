@@ -109,6 +109,16 @@ and produces it's output.
 To execute the whole notebook, run all cells in order.
 
 
+## Figures, tables and extra results not included in the paper
+
+The figures and tables included in the paper are generated in the Jupyter notebooks,
+and stored in the `Figures/` and `Latex_tables` folders, respectively.
+Moreover, those folders also contain some extra figures and tables that are not 
+included in the paper. Some of these results include the MNL coefficients table
+for each of the real datasets, or the figures showing the SHAP values for each of
+the models and datasets.
+
+
 ## License
 
 All source code is made available under a MIT license. You can freely

@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2022 José Ángel Martín Baos
+Copyright (c) 2023 José Ángel Martín Baos, Julio Alberto López-Gomez,
+Luis Rodríguez-Benítez, Tim Hillel, and Ricardo García-Ródenas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

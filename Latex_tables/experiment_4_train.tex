@@ -1,0 +1,18 @@
+\begin{table}
+\centering
+\caption{Accuracy and GMPCA results by model for each real dataset on the training set (using 5-CV)}
+\label{tab:experiment_4_train-1-train}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{rllllllllllll}
+\toprule
+{} & \multicolumn{2}{c}{MNL} & \multicolumn{2}{c}{SVM} & \multicolumn{2}{c}{RF} & \multicolumn{2}{c}{XGBoost} & \multicolumn{2}{c}{NN} & \multicolumn{2}{c}{DNN} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} 
+{} & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA \\
+\midrule
+Optima &    75.87 &  55.95 &    77.31 &  57.19 &    76.86 &  57.99 &    78.83 &  60.65 &    77.69 &  57.23 &    77.23 &  56.37 \\
+NTS    &     65.8 &  43.97 &    65.02 &  45.07 &    68.32 &   47.1 &    69.16 &  48.08 &    68.44 &  47.34 &    67.51 &  46.51 \\
+LPMC   &    73.03 &  49.64 &    74.76 &  51.74 &    74.67 &  51.17 &    75.69 &  52.68 &    74.49 &  51.76 &    74.57 &  51.84 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

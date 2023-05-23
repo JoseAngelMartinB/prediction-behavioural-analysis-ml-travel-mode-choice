@@ -1,0 +1,18 @@
+\begin{table}
+\centering
+\caption{Accuracy and GMPCA results by model for each real dataset on the test set}
+\label{tab:experiment-4-test}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{rllllllllllll}
+\toprule
+{} & \multicolumn{2}{c}{MNL} & \multicolumn{2}{c}{SVM} & \multicolumn{2}{c}{RF} & \multicolumn{2}{c}{XGBoost} & \multicolumn{2}{c}{NN} & \multicolumn{2}{c}{DNN} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} 
+{} & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA & Accuracy &  GMPCA \\
+\midrule
+Optima &    72.01 &  51.71 &    74.65 &   55.0 &    78.17 &  58.24 &    77.64 &  59.54 &    75.53 &  48.76 &    75.53 &  54.03 \\
+NTS    &    65.88 &  44.35 &    65.59 &  45.53 &    68.99 &  47.54 &    69.82 &  48.72 &     69.0 &  47.67 &    68.63 &  47.46 \\
+LPMC   &    72.54 &  48.85 &     74.2 &  50.89 &    73.59 &  50.16 &    74.72 &  51.85 &    74.25 &  51.03 &    74.05 &  51.16 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

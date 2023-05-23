@@ -1,0 +1,23 @@
+\begin{table}
+\centering
+\caption{Estimated WTP by model on the synthetic datasets}
+\label{tab:experiment_3_WTP_table}
+\begin{tabular}{rlllllll}
+\toprule
+{} &  true &   MNL &   SVM &    RF &  XGBoost &    NN &   DNN \\
+\midrule
+logit linear $\beta_b=1.0$  &   1.0 &  0.99 &  0.99 &  0.48 &     0.92 &  0.97 &  0.96 \\
+logit linear $\beta_b=2.0$  &   0.5 &  0.48 &  0.52 &  0.24 &     0.52 &  0.50 &  0.49 \\
+logit linear $\beta_b=0.5$  &   2.0 &  2.03 &  2.11 &  1.41 &     2.29 &  2.08 &  2.16 \\
+logit CD $\beta_b=1.0$      &   1.0 &  1.06 &  0.98 &  0.55 &     0.77 &  0.94 &  0.91 \\
+logit CD $\beta_b=2.0$      &   0.5 &  0.70 &  0.59 &  0.13 &     0.40 &  0.62 &  0.41 \\
+logit CD $\beta_b=0.5$      &   2.0 &  1.73 &  1.79 &  0.77 &     1.49 &  1.88 &  1.87 \\
+probit linear $\beta_b=1.0$ &   1.0 &  1.00 &  0.97 &  0.64 &     0.93 &  0.96 &  0.97 \\
+probit linear $\beta_b=2.0$ &   0.5 &  0.49 &  0.50 &  0.17 &     0.52 &  0.51 &  0.49 \\
+probit linear $\beta_b=0.5$ &   2.0 &  1.94 &  2.14 &  1.15 &     2.12 &  2.11 &  2.14 \\
+probit CD $\beta_b=1.0$     &   1.0 &  0.98 &  0.95 &  0.32 &     0.79 &  0.96 &  1.00 \\
+probit CD $\beta_b=2.0$     &   0.5 &  0.68 &  0.57 &  0.35 &     0.40 &  0.63 &  0.58 \\
+probit CD $\beta_b=0.5$     &   2.0 &  1.65 &  1.65 &  1.00 &     1.52 &  1.52 &  2.03 \\
+\bottomrule
+\end{tabular}
+\end{table}
