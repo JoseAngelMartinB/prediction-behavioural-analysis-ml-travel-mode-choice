@@ -7,15 +7,20 @@ Authors:
 * Tim Hillel
 * Ricardo García-Ródenas
 
-This paper has been submitted for publication in *Transportation Research Part C: Emerging Technologies*.
+These codes are associated with the paper "A prediction and behavioural analysis of machine learning methods for modelling travel mode choice", which was published in "Transportation Research Part C: Emerging Technologies" in November 2023. This paper can be downloaded from Elsevier at [https://doi.org/10.1016/j.trc.2023.104318](https://doi.org/10.1016/j.trc.2023.104318). 
 
-Preprint available at [arXiv](https://arxiv.org/abs/2301.04404).
+If you use any part of the code or data provided in this repository, please cite it as:
+> José Ángel Martín-Baos, Julio Alberto López-Gómez, Luis Rodriguez-Benitez, Tim Hillel, Ricardo García-Ródenas (2023). A prediction and behavioural analysis of machine learning methods for modelling travel mode choice. Transportation Research Part C: Emerging Technologies, 156, 104318, DOI: [10.1016/j.trc.2023.104318](https://doi.org/10.1016/j.trc.2023.104318)
+
+
+You can also access the preprint version of this paper on [arXiv](https://arxiv.org/abs/2301.04404).
+
 
 ## Abstract
 
 The emergence of a variety of Machine Learning (ML) approaches for travel mode choice prediction poses
 an interesting question for transport modellers: which models should be used for which applications? The
-answer to this question goes beyond simple predictive performance, and isinstead a balance of many factors,
+answer to this question goes beyond simple predictive performance, and is instead a balance of many factors,
 including behavioural interpretability and explainability, computational complexity, and data efficiency.
 There is a growing body of research which attempts to compare the predictive performance of different ML
 classifiers with classical Random Utility Models (RUMs). However, existing studies typically analyse only
@@ -44,7 +49,7 @@ The folder `SimulateDatasets` contains the code used to generate the synthetic d
 
 The `Models` folder contains a wrapper for the models used in this study. The wrapper is used to train and test the models, and to extract the behavioural indicators. The models used in this study are implemented in Python, using the [scikit-learn](http://scikit-learn.org/stable/) library, the [XGBoost](https://xgboost.readthedocs.io/en/latest/) library, and the [Biogeme](https://biogeme.epfl.ch/) library.
 
-The root folder contains the environment file with the Anaconda dependencies needed to execute the code. The `experiments_functions.py` file contains several functions that are needed during the experiments. Finally, the rest of the python files are used to execute the experiments. The files starting with `0-Preprocess-` are used to preprocess the original datasets. Next, the files starting with `1-` are used to tune the model hyperparameters, which are stored in `Data/adjusted-hyperparameters` folder. Finally, the files starting with `2-Experiment-1-3` and `2-Experiment-4` contains the code used to execute the experiments 1 to 3 and 4, respectively. The calculations and figure generation are all run inside
+The root folder contains the environment file with the Anaconda dependencies needed to execute the code. The `experiments_functions.py` file contains several functions that are needed during the experiments. Finally, the rest of the Python files are used to execute the experiments. The files starting with `0-Preprocess-` are used to preprocess the original datasets. Next, the files starting with `1-` are used to tune the model hyperparameters, which are stored in `Data/adjusted-hyperparameters` folder. Finally, the files starting with `2-Experiment-1-3` and `2-Experiment-4` contain the code used to execute the experiments 1 to 3 and 4, respectively. The calculations and figure generation are all run inside
 [Jupyter notebooks](http://jupyter.org/).
 
 
