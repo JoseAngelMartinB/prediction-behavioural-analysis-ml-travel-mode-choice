@@ -262,7 +262,7 @@ for index, model in models.iterrows():
                                         trials=trials)
 
         elapsed_time = time.perf_counter() - time_ini
-        print("Tiempo ejecucción: %f" % elapsed_time)
+        print("Execution time: %f" % elapsed_time)
 
         best_hyperparameters[classifier] = best_classifier
         best_hyperparameters[classifier]['_best_loss'] = trials.best_trial["result"]["loss"]

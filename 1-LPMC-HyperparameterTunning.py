@@ -52,7 +52,7 @@ hyperparameters_file = dataset_prefix+"_hyperparameters"
 crossval_pickle_file = data_dir+dataset_prefix+"_hyperparams_crossval.pickle"
 reset_crossval_indices = 0 # Set to 0 for reproducibility of the experiment over multiple executions
 
-scaled_fetures = ['day_of_week', 'start_time_linear', 'age', 'car_ownership',
+scaled_features = ['day_of_week', 'start_time_linear', 'age', 'car_ownership',
                   'distance', 'dur_walking', 'dur_cycling', 'dur_pt_access', 'dur_pt_rail',
                   'dur_pt_bus', 'dur_pt_int_waiting', 'dur_pt_int_walking', 'pt_n_interchanges',
                   'dur_driving', 'cost_transit', 'cost_driving_total']
@@ -191,9 +191,9 @@ def objective(space):
 
         # Scale the data
         scaler = StandardScaler()
-        scaler.fit(X_train[scaled_fetures])
-        X_train.loc[:, scaled_fetures] = scaler.transform(X_train[scaled_fetures])
-        X_test.loc[:, scaled_fetures] = scaler.transform(X_test[scaled_fetures])
+        scaler.fit(X_train[scaled_features])
+        X_train.loc[:, scaled_features] = scaler.transform(X_train[scaled_features])
+        X_test.loc[:, scaled_features] = scaler.transform(X_test[scaled_features])
 
         clf.fit(X_train, y_train)
 
@@ -236,7 +236,7 @@ for classifier in model_type_to_class.keys():
 
     
     elapsed_time = time.perf_counter() - time_ini
-    print("Tiempo ejecucción: %f" % elapsed_time)
+    print("Execution time: %f" % elapsed_time)
     
     best_hyperparameters[classifier] = best_classifier
     best_hyperparameters[classifier]['_best_loss'] = trials.best_trial["result"]["loss"]
